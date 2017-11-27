@@ -1,0 +1,22 @@
+config:
+  app:
+    title: Flying Garden
+  ui:
+    mount:
+      root: '#app'
+      view: 'app'
+
+router:
+  ignore:
+  - visitor-home
+  - user-dashboard
+  - admin-dashboard
+  default:
+    visitor: visitor-home
+    user: user-dashboard
+    admin: admin-dashboard
+
+firebase:
+  auth:
+    timeout: 60000
+  config:

@@ -1,0 +1,40 @@
+
+@tailwind preflight;
+
+@tailwind utilities;
+
+@responsive {
+  .leading-zero {
+    line-height: 0;
+  }
+}
+
+@responsive {
+  .bg-red-google {
+    background-color: #dd4b39;
+  }
+}
+
+@responsive {
+  .red-google {
+    color: #dd4b39;
+  }
+}
+
+@responsive {
+  .order-0 { order: 0; }
+  .order-1 { order: 1; }
+  .order-2 { order: 2; }
+  .order-3 { order: 3; }
+  .order-4 { order: 4; }
+  .order-5 { order: 5; }
+}
+
+[data-patch]:not(input),
+[data-patch]:not(input) * {
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
+}
