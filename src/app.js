@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
 /**
  * Setup system
  */
-let context = require.context('./', true, /\.js|yml|pug/)
+let context = require.context('./', true, /\.yml|pug/)
 
 function getFiles(context) {
   return context.keys().reduce((acc, x) => {
@@ -35,13 +35,13 @@ let modules = [
   appModule
 ]
 
-require('./assets/css/styles.css')
+// require('./assets/css/styles.css')
 
 let instance = jsonmvc(modules)
 
 if (module.hot) {
   module.hot.accept(context.id, () => {
-    let context = require.context('./', true, /\.js|yml|pug/)
+    let context = require.context('./', true, /\.yml|pug/)
     let files = getFiles(context)
 
     let module = jsonmvcLoad({
