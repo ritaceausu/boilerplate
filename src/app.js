@@ -35,7 +35,7 @@ let modules = [
   appModule
 ]
 
-// require('./assets/css/styles.css')
+require('./assets/css/font-awesome.css')
 
 let instance = jsonmvc(modules)
 

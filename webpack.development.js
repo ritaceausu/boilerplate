@@ -85,7 +85,7 @@ module.exports = new Config().merge({
       { enforce: 'pre', test: /\.yml|\.yaml$/, exclude: exclude, loaders: ['json-loader', 'yaml-loader']  },
       { enforce: 'pre', test: /\.json$/, exclude: exclude, loader: 'json-loader' },
       { enforce: 'pre', test: /\.png$/, exclude: exclude, loader: 'url-loader?limit=5000' },
-  /*    { enforce: 'pre', test: /\.css$/, exclude: exclude,
+      { enforce: 'pre', test: /\.css$/, exclude: exclude,
           use: [
             'style-loader',
              {
@@ -107,7 +107,7 @@ module.exports = new Config().merge({
                 }
              }
           ]
-      }, */
+      },
       { enforce: 'pre', test: /\.jpg$/, exclude: exclude, loader: 'url-loader?prefix=img/&limit=5000' },
       { enforce: 'pre', test: /\.gif$/, exclude: exclude, loader: 'url-loader?prefix=img/&limit=5000' },
       { enforce: 'pre', test: /\.woff/, exclude: exclude, loader: 'url-loader?prefix=font/&limit=5000' },
